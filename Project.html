@@ -30,6 +30,55 @@ body{
         background-repeat: no-repeat;
         height: 100%;
     }
+	.project-container{
+		display: grid;
+		gap:20px;
+		grid-template-columns: 500px 500px;
+		margin-top: 0;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 50px;
+	}
+	.project-items{
+		background-color:#95dcf6;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+		border-radius: 20px;
+		gap:20px;
+	}
+	.project-section{
+		margin-top: 120px;
+	} 
+	.div-head{
+		display: grid;
+		place-items: center;
+		width:100%;
+		
+	}
+	.project-text span{
+		color:black;
+	}
+	.project-text h4{
+		color:#EC2D5D;
+	}
+	@media screen and (max-width:1125px)
+	{
+		.project-container{
+			display: grid;
+			grid-template-columns: 100%;
+			margin: 0;
+			margin-bottom: 50px;
+
+		}
+		.project-section{
+			margin-top: 50px;
+		}
+	}
     </style>
 </head>
 <body>
@@ -46,75 +95,128 @@ body{
 	          <li class="nav-item"><a href="index.html" class="nav-link"><span><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</span></a></li>
 	          <li class="nav-item"><a href="About.html" class="nav-link"><span><i class="fa-solid fa-user"></i>&nbsp;&nbsp;About</span></a></li>
 			      <li class="nav-item"><a href="Education.html" class="nav-link"><span><i class="fa-solid fa-brain"></i>&nbsp;&nbsp;Skill</span></a></li>
-	          <li class="nav-item active"><a href="Project.html" class="nav-link"><span><i class="fa-solid fa-laptop-code"></i>&nbsp;&nbsp;Project</span></a></li>
-			      <li class="nav-item"><a href="Certification.html" class="nav-link"><span><i class="fa-solid fa-award"></i>&nbsp;&nbsp;Certification</span></a></li>
+	          <li class="nav-item active"><a href="Project.html" class="nav-link"><span><i class="fa-solid fa-laptop-code"></i>&nbsp;&nbsp;Projects</span></a></li>
+			      <li class="nav-item"><a href="Certification.html" class="nav-link"><span><i class="fa-solid fa-award"></i>&nbsp;&nbsp;Certifications</span></a></li>
 	          <li class="nav-item"><a href="Contact.html" class="nav-link"><span><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Contact</span></a></li>
 	        </ul>
         </div>
       </div>
     </nav>
    
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container-fluid px-md-0">
-    		<div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Project</h1>
-            <h2 class="mb-4">Project</h2>
-           
-          </div>
-        </div>
+    <!-- <section class="ftco-section ftco-project project-header" id="projects-section">
+    	
     		<div class="row no-gutters">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/parentlinker.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#"> HTML , CSS ,JAVASCRIPT,JAVA</a></h3>
-	    					<span>Parent Linker</span>
+				
+    			<div class="col-md-4 project-container">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center project-items">
+
+    					<div>
+							<img src="images/parentlinker.jpg" alt="" height="200px">
+						</div>
+	    				<div >
+	    					<h3><a href="#"> Parent Linker</a></h3>
+	    					<span>TOOLS:  HTML , CSS , Javascript , Java</span>
 	    				</div>
     				</div>
   				</div>
-  				<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Anti-theft.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">INTERNET OF THINGS</a></h3>
-	    					<span>IOT based Anti Theft Flooring System Using Node MCU</span>
+  				<div class="col-md-4  project-container">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center project-items">
+
+    					<div>
+							<img src="images/Anti-theft.jpg" alt="" height="200px">
+						</div>
+	    				<div >
+	    					<h3><a href="#"> IOT based Anti Theft Flooring System using Node MCU</a></h3>
+	    					<span>TOOLS : Internet Of Things</span>
 	    				</div>
     				</div>
   				</div>
 
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/bookskymock.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">WEB DEVELOPMENT(HTML,CSS,JAVASCRIPT)</a></h3>
-	    					<span>Booksky</span>
+    			<div class="col-md-4 project-container">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center project-items">
+
+    					<div>
+							<img src="images/bookskymock.jpg" alt="" height="200px">
+						</div>
+	    				<div >
+	    					<h3><a href="#"> Booksky</a></h3>
+	    					<span>TOOLS : HTML , CSS , Javascript </span>
 	    				</div>
     				</div>
     			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/ecomm.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">WEB DEVELOPMENT(HTML,CSS,JAVASCRIPT)</a></h3>
-	    					<span>E-Commerce</span>
+    			<div class="col-md-4 project-container">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center project-items">
+
+    					<div>
+							<img src="images/ecomm.jpg" alt="" height="200px">
+						</div>
+	    				<div >
+	    					<h3><a href="#"> E-commerce</a></h3>
+	    					<span>TOOLS : HTML , CSS , Javascript</span>
 	    				</div>
     				</div>
     			</div>
     			
-    			<div class="col-md-4">
-    				<!-- <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div> -->
-    			</div>
+    			
     		</div>
     	</div>
-    </section>
+    </section> -->
+<div class="div-head">
+	<section class="project-section">
+		<div class="container-fluid px-md-0 ">
+    		<div class="row no-gutters justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Project</h1>
+            <h2 class="mb-4">Projects</h2>
+           
+          </div>
+        </div>
+		<div class="project-container"> 
+			<div class="project-items">
+				<div class="project-img">
+					<img src="images/parentlinker.jpg" height="200px">
+				</div>
+				<div class="project-text">
+					<h4>Parent Linker</h4>
+	    			<span>TOOLS:  HTML , CSS , Javascript , Java</span>
+				</div>
+			</div>
 
+			<div class="project-items">
+				<div class="project-img">
+					<img src="images/Anti-theft.jpg" alt="" height="200px">
+				</div>
+				<div class="project-text">
+					<h4> IOT based Anti Theft Flooring System using Node MCU</h4>
+	    			<span>TOOLS : Internet Of Things</span>
+					
+				</div>
+			</div>
+
+			<div class="project-items">
+				<div class="project-img">
+					<img src="images/bookskymock.jpg" alt="" height="200px">
+				</div>
+				<div class="project-text">
+					<h4>Booksky</h4>
+	    			<span>TOOLS : HTML , CSS , Javascript </span>
+				</div>
+			</div>
+
+			<div class="project-items">
+				<div class="project-img">
+					<img src="images/ecomm.jpg" alt="" height="200px">
+				</div>
+				<div class="project-text">
+					<h4>E-commerce</h4>
+	    			<span>TOOLS : HTML , CSS , Javascript</span>
+				</div>
+			</div>
+
+			
+		</div>
+	</section>
+</div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
